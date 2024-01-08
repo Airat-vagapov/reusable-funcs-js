@@ -61,11 +61,6 @@ class Tab {
                 var $html = '<div>' + html + '</div>'
                 $(inst.$tabContentBlock).html($($html).find('.catalogList'))
                 $(inst.$tabContentBlock).find('[data-tab-content]').attr('data-tab-content', tabName)
-            }).then(function () {
-                if ($(inst.$tabContentBlock).find('.catalogList').length) {
-                    initImagePreview()
-                    initRoundButtons()
-                }
             })
     }
 }
